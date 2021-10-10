@@ -9,7 +9,7 @@
   border: 3px solid grey;
   border-radius: 7px;
   padding: 2em;
-  margin: 1.5em;
+  margin: auto;
 }
 
 .LOrem {
@@ -25,6 +25,7 @@
 
 h1 {
   font-size: xx-large;
+  color: maroon;
 }
 
 @media (max-width:550px){
