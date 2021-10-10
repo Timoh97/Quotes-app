@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
 import { MyprojectComponent } from './myproject/myproject.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroComponent,
-    MyprojectComponent
+    MyprojectComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

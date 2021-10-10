@@ -8,85 +8,35 @@
 </head>
 <body>
   <div>
+
     <div class="myproject">
-      <div> <h3>Votes:{{numberOfLikes1}}</h3> <br> <br></div>
-      <div> <h3>Votes:{{numberOfLike1}}</h3> <br> <br></div>
-      <div>
-       <button (click)='likeButtonClick1()'>Upvote</button>
-       <button (click)='dislikeButtonClick1()'>Downvote</button>
-      </div>
-      <p>myproject works!</p>
-    <small>I have regretted my speech and not my silence philosopher picture quotes</small>
+<ul>
+  <li *ngFor='let Myproject of projects'>
+    <div>
+<div>
+  Quote Author: {{Myproject.Author}}
+  Quote: {{Myproject.quote}}.
+  Submitted by: {{Myproject.submittedbyname}}
+
+</div>
+
     </div>
-    <div class="myproject">
-      <div> <h3>Votes:{{numberOfLikes2}}</h3> <br> <br></div>
-      <div> <h3>Votes:{{numberOfLike2}}</h3> <br> <br></div>
-      <div>
-       <button (click)='likeButtonClick2()'>Upvote</button>
-       <button (click)='dislikeButtonClick2()'>Downvote</button>
-      </div>
-      <p>myproject works!</p>
-    <small>I have regretted my speech and not my silence philosopher picture quotes</small>
-    </div>
-    <div class="myproject">
-      <div> <h3>Votes:{{numberOfLikes3}}</h3> <br> <br></div>
-      <div> <h3>Votes:{{numberOfLike3}}</h3> <br> <br></div>
-      <div>
-       <button (click)='likeButtonClick3()'>Upvote</button>
-       <button (click)='dislikeButtonClick3()'>Downvote</button>
-      </div>
-      <p>myproject works!</p>
-    <small>I have regretted my speech and not my silence philosopher picture quotes</small>
-    </div>
-    <div class="myproject">
-      <div> <h3>Votes:{{numberOfLikes4}}</h3> <br> <br></div>
-      <div> <h3>Votes:{{numberOfLike4}}</h3> <br> <br></div>
-      <div>
-       <button (click)='likeButtonClick4()'>Upvote</button>
-       <button (click)='dislikeButtonClick4()'>Downvote</button>
-      </div>
-      <p>myproject works!</p>
-    <small>I have regretted my speech and not my silence philosopher picture quotes</small>
-    </div>
-    <div class="myproject">
-      <div> <h3>Votes:{{numberOfLikes5}}</h3> <br> <br></div>
-      <div> <h3>Votes:{{numberOfLike5}}</h3> <br> <br></div>
-      <div>
-       <button (click)='likeButtonClick5()'>Upvote</button>
-       <button (click)='dislikeButtonClick5()'>Downvote</button>
-      </div>
-      <p>myproject works!</p>
-    <small>I have regretted my speech and not my silence philosopher picture quotes</small>
-    </div>
-    <div class="myproject">
-      <div> <h3>Votes:{{numberOfLikes6}}</h3> <br> <br></div>
-      <div><h3>Votes:{{numberOfLike6}}</h3></div>
-      <div>
-       <button (click)='likeButtonClick6()'>Upvote</button>
-       <button (click)='dislikeButtonClick6()'>Downvote</button>
-      </div>
-      <p>myproject works!</p>
-    <small>I have regretted my speech and not my silence philosopher picture quotes</small>
-    </div>
-  </div>
+  </li>
   <div>
-    <form action="" class="row">
-      <input type="text" name="firstName" placeholder="first Name">
-      <input type="text" name="secondName" placeholder="second Name">
-      <input type="email" name="Email" placeholder="e.g druryroy0@gmail.com">
-      <textarea name="message" id="info" cols="30" rows="10" placeholder="Quotes here..."></textarea>
-      <button type="submit">Click me</button>
-    </form>
-    <div class="myproject">
-      <div> <h3>Votes:{{numberOfLikes}}</h3> <br> <br></div>
-      <div> <h3>Votes:{{numberOfLike}}</h3> <br> <br></div>
-      <div>
-       <div>
-         <p>Inspirational</p>
-         <button (click)='likeButtonClick()'>Upvote</button>
-       </div>
-       <button (click)='dislikeButtonClick()'>Downvote</button>
-      </div>
+    Inspirational: {{numberOfLikes1}}
+  Terrible: {{numberOfLike1}}
+        <button class="btn btn-success" (click)='likeButtonClick1()'>Upvote</button>
+        <button class="btn btn-danger" (click)= 'dislikeButtonClick1()'>Downvote</button>
+  </div>
+  <p>This goal will be complete in {{projects.completeDate|dateCount}} days</p>
+  <!-- <div>
+    Inspirational: {{numberOfLikes1}}
+    Terrible: {{numberOfLike1}}
+    <button class="btn btn-success" (click)='likeButtonClick1()'>Upvote</button>
+    <button class="btn btn-danger" (click)= 'dislikeButtonClick1()'>Downvote</button>
+  </div> -->
+</ul>
+
     </div>
   </div>
 

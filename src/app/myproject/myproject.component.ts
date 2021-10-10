@@ -1,5 +1,7 @@
 import { Quote } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { Myproject } from '../myproject';
+
 
 
 
@@ -10,6 +12,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./myproject.component.css']
 })
 export class MyprojectComponent implements OnInit {
+
+
+
+  projects: Myproject[] = [
+    new Myproject('Aristotle', 'We are what we repeatedly do. Excellence then, is not an act, but a habit.', 'Timothy Mugendi',new Date(2020,3,14)),
+    new Myproject('Mahatma Gandhi','Live as if you were to die tomorrow. Learn as if you were to learn forever.','Timothy Mugendi',new Date(2019,6,9)),
+    new Myproject('Plato','Wise men talk because they have something to say, fools because they have to say something.','Timothy Mugendi',new Date(2022,1,12)),
+
+  ];
+
 
   numberOfLikes:number=0;
   numberOfLike:number=0;
