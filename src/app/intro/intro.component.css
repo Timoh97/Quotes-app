@@ -16,7 +16,13 @@ div {
   background-color: rgb(211, 202, 202);
   border-radius: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.quotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 h2 {
