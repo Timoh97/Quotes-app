@@ -1,7 +1,10 @@
 
 # Quotes
+# Description
 #### A website application on Quotes where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.  , 2 October 2021
-#### By **Timothy Mugendi**
+#### By
+ # AUTHOR 
+**Timothy Mugendi**
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
@@ -34,7 +37,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 timothy.nthiga@student.moringaschool.com
 
 ## My gh-pages link
-
+https://timoh97.github.io/Quotes-app/
 ### License
 MIT License
 
