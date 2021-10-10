@@ -16,9 +16,12 @@ div {
   margin-top: 2em;
   background-color: rgb(211, 202, 202);
   border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  text-align: center;
+  font-size: medium;
+}
+
+.philosophers  {
+  margin: 2em;
 }
 .intro1 {
   border: 2px solid grey;
@@ -40,5 +43,10 @@ div {
 }
 
 h2 {
+  color: maroon;
+}
+
+
+#quotesbestIntro {
   color: maroon;
 }

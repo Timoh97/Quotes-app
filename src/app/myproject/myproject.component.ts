@@ -12,12 +12,19 @@ import { Component, OnInit } from '@angular/core';
 export class MyprojectComponent implements OnInit {
 
   numberOfLikes:number=0;
+  numberOfLike:number=0;
   numberOfLikes1:number=0;
+  numberOfLike1:number=0;
   numberOfLikes2:number=0;
+  numberOfLike2:number=0;
   numberOfLikes3:number=0;
+  numberOfLike3:number=0;
   numberOfLikes4:number=0;
+  numberOfLike4:number=0;
   numberOfLikes5:number=0;
+  numberOfLike5:number=0;
   numberOfLikes6:number=0;
+  numberOfLike6:number=0;
 
 
   likeButtonClick1() {
@@ -25,7 +32,7 @@ export class MyprojectComponent implements OnInit {
       };
 
   dislikeButtonClick1() {
-        this.numberOfLikes1--
+    this.numberOfLike1--
        };
 
   likeButtonClick2() {
@@ -33,7 +40,7 @@ export class MyprojectComponent implements OnInit {
           };
 
   dislikeButtonClick2() {
-            this.numberOfLikes2--
+            this.numberOfLike2--
            };
 
   likeButtonClick3() {
@@ -41,7 +48,7 @@ export class MyprojectComponent implements OnInit {
               };
 
   dislikeButtonClick3() {
-                this.numberOfLikes3--
+                this.numberOfLike3--
                };
 
   likeButtonClick4() {
@@ -49,28 +56,28 @@ export class MyprojectComponent implements OnInit {
                   };
 
   dislikeButtonClick4() {
-                    this.numberOfLikes4--
+                    this.numberOfLike4--
                    };
   likeButtonClick5() {
                     this.numberOfLikes5++
                       };
 
   dislikeButtonClick5() {
-                        this.numberOfLikes5--
+                        this.numberOfLike5--
                        };
                        likeButtonClick6() {
                         this.numberOfLikes6++
                           };
 
                       dislikeButtonClick6() {
-                            this.numberOfLikes6--
+                            this.numberOfLike6--
                            };
   likeButtonClick() {
 this.numberOfLikes++
   };
 
   dislikeButtonClick() {
-    this.numberOfLikes--
+    this.numberOfLike--
    };
 
   constructor() {
