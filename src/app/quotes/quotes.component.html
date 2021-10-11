@@ -1,1 +1,68 @@
-<p>quotes works!</p>
+<header style="border-bottom: 3px solid rgba(148, 52, 54, 1) ;">
+  <div class="container">
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+          <h1> <span style="color: rgba(148, 52, 54, 1); font-family: 'Caveat', cursive;">my</span><span style="color: rgba(58, 68, 39, 1); font-family: 'Caveat', cursive;">Quote</span> </h1>
+      </div>
+      <div class="col-md-8"></div>
+  </div>
+</header>
+
+
+<div class="container row">
+  <div class="col-md-1"></div>
+  <div class="col-md-3">
+      <img src="assets/philosophos.jpg" alt="Mahatma Gadhi gave inspirational quotes" width="200">
+      <p style="color: maroon; padding-left: 10px;">“Adult man with beard in Medieval costume thinking for inspiration”</p>
+  </div>
+  <div class="col-md-6" style="border-left: 3px solid rgba(148, 52, 54, 1); ">
+      <div *ngFor='let quote of quotes; let i= index' style="border: 2px solid lightgray; padding: 5px 5px; margin-top: 5px;">
+          <!-- quote -->
+          <div>
+              <h2> "{{ quote.theQuote }}" </h2>
+          </div>
+
+          <div style="line-break: 1em;">
+              <p><span style="font-weight: bolder;">Author:</span> {{ quote.author }} </p>
+              <p>Posted by {{ quote.name }} </p>
+              <p>Published {{ quote.publishedDate|timeAgo }}</p>
+          </div>
+
+          <div class="row">
+              <app-quote-details  [quotes]='quotes' (isDelete)='toDelete($event,i)'></app-quote-details>
+          </div>
+
+      </div>
+
+      <div class="row1">
+        <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+      </div>
+
+  </div>
+  <div class="col-md-2">
+      <h2>About <span style="color: rgba(148, 52, 54, 1); font-family: 'Caveat', cursive;">my</span><span style="color: rgba(58, 68, 39, 1); font-family: 'Caveat', cursive;">Quote</span> </h2>
+      <p>Life is a beautiful journey that is meant to be embraced to the fullest every day. Whether a funny quote from a famous celebrity or an encouraging message about giving it your best from a successful business person, we can all use a little motivation and inspiration these days via a life quote. </p>
+      <p><span style="color: rgba(148, 52, 54, 1); font-family: 'Caveat', cursive;">my</span><span style="color: rgba(58, 68, 39, 1); font-family: 'Caveat', cursive;">Quote</span> allows you to add your own choice of quote as well as upvote and downvote added quotes. Enjoy!</p>
+
+      <h3>Great Quote Authors</h3>
+      <ul>
+          <li><a href="https://www.brainyquote.com/authors/william-shakespeare-quotes">William Shakespeare</a></li>
+          <li><a href="https://www.goalcast.com/2017/03/29/top-30-most-inspiring-albert-einstein-quotes/">Albert Einstein</a></li>
+          <li><a href="https://www.goalcast.com/2017/03/20/top-20-inspiring-mahatma-gandhi-quotes/">Mahatma Gandhi</a></li>
+          <li><a href="https://everydaypower.com/quotes-by-mother-teresa/">Mother Teresa</a></li>
+          <li><a href="https://www.goodreads.com/author/quotes/6356.Barack_Obama">Barrack Obama</a></li>
+      </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
