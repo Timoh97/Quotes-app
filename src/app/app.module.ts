@@ -8,6 +8,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { QuotesComponent } from './quotes/quotes.component';
 import { VoteQuoteComponent } from './vote-quote/vote-quote.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { VoteQuoteComponent } from './vote-quote/vote-quote.component';
     QuoteFormComponent,
     QuotesComponent,
     VoteQuoteComponent,
+    QuoteDetailsComponent,
   ],
 
   imports: [
