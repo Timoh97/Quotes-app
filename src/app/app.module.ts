@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
