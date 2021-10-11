@@ -6,7 +6,12 @@ a{
   border: 2px brown solid;
 }
 
-
+.col-md-3  {
+  border: 2px solid rgb(211, 193, 193);
+  text-align: center;
+  padding: 2em;
+  background-color: rgb(211, 193, 193);
+   }
 
 
  img {

@@ -1,8 +1,8 @@
 
 # Quotes
 # Description
-#### A website application on Quotes where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.  , 2 October 2021
-#### By
+ A website application on Quotes where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
+
  # AUTHOR 
 **Timothy Mugendi**
 
