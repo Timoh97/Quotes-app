@@ -52,11 +52,13 @@
     </div>
 
   </div>
-
+  <app-quote-form (postQuote)="postNewQuote($event)"></app-quote-form>
 
 </div>
-
-
-  <app-myproject></app-myproject>
+<div *ngFor="let quote of quotes">
+  {{quote.Author}}
+  {{quote.Name}}
+  {{quote.quote}}
+</div>
 </body>
 </html>

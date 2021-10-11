@@ -1,0 +1,8 @@
+<div>
+  <form #ngquoteForm = 'ngForm' (ngSubmit)='submitQuote()' >
+    <input id="Author" name="Author" type="text" [(ngModel)]= "newQuote.Author" >
+    <input id="Name" name="" type="text" placeholder="submitted by">
+    <textarea  name="" id="quote" cols="30" rows="10" placeholder="Enter quote..."></textarea>
+   <button  type="submit">Submit</button>
+  </form>
+</div>
