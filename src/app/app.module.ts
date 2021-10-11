@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
+import { QuotesComponent } from './quotes/quotes.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     IntroComponent,
     QuoteFormComponent,
+    QuotesComponent,
   ],
 
   imports: [
