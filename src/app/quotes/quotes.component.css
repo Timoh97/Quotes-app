@@ -31,3 +31,7 @@ clip-path: circle();
    flex-direction: row-reverse;
    background-color: rgb(219, 198, 198);
  }
+
+ h2 {
+   color: rgb(78, 52, 148);
+ }
